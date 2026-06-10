@@ -1,9 +1,10 @@
-spring.application.name=Backend
+# Copie ce fichier en application.properties et remplis les valeurs
+
 # PostgreSQL
+spring.application.name=backend
 spring.datasource.url=jdbc:postgresql://localhost:5432/stockpilot_db
-spring.datasource.username=postgres
-spring.datasource.password=rida2004
-jwt.secret=UnMotDePasseTresLongEtComplexeQuiNeChangePasJamais123456789
+spring.datasource.username=YOUR_USERNAME
+spring.datasource.password=YOUR_PASSWORD
 
 # JPA
 spring.jpa.hibernate.ddl-auto=update
@@ -11,8 +12,9 @@ spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
 spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
 
-#porte
+# Server
 server.port=8080
 
-
+# JWT
+jwt.secret=YOUR_SECRET_KEY_MINIMUM_32_CHARACTERS
 jwt.expiration=86400000
